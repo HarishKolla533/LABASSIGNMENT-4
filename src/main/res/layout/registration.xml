@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.harry.labassignment4.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:inputType="textPersonName"
+        android:hint="uname"
+
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/etuname" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="password"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/etuname"
+        android:layout_alignStart="@+id/etuname"
+        android:layout_marginTop="29dp"
+        android:id="@+id/etpwd" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="email"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/etpwd"
+        android:layout_alignEnd="@+id/etpwd"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="44dp"
+        android:id="@+id/etid" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="phoneno"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/etid"
+        android:layout_alignStart="@+id/etid"
+        android:layout_marginTop="50dp"
+        android:id="@+id/etnum" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:hint="address"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/etnum"
+        android:layout_alignStart="@+id/etnum"
+        android:layout_marginTop="40dp"
+        android:id="@+id/etaddress" />
+
+    <CheckBox
+        android:text="Remember Me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etaddress"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="41dp"
+        android:id="@+id/checkBox" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/checkBox"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/button" />
+</RelativeLayout>
